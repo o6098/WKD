@@ -1,18 +1,18 @@
 var config = require('./webpack.config.js');
 var webpack = require('webpack');
 
-config.plugin.push(
+config.plugins.push(
   new webpack.DefinePlugin({
     "process.env":{
-      "NODE_ENV": JSON.stringfy("production")
+      "NODE_ENV": JSON.stringify("production")
     }
   })
 );
 
-config.plugin.push(
+config.plugins.push(
   new webpack.optimize.UglifyJsPlugin({
     compress: {
-      warning:false
+      warnings:false
     }
   })
 );

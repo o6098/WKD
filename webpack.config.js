@@ -1,4 +1,4 @@
-'use srtict';
+
 
 var path = require('path');
 var webpack = require('webpack');
@@ -8,7 +8,9 @@ module.exports = {
     extensions: ['','.js']
   },
   devtool:'eval-source-map',
-  entry: path.join(__dirname,'src/index.js'),
+  entry:[
+    './src/index'
+  ],
   output:{
     path: path.join(__dirname,'/dist'),
     filename:'bundle.js',
