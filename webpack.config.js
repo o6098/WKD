@@ -16,7 +16,7 @@ module.exports = {
   },
   devServer: {
     contentBase:'./dist',
-    hot:ture
+    hot:true
   },
   module:{
     loaders: [{
