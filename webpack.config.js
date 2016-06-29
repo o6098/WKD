@@ -7,7 +7,7 @@ module.exports = {
   resolve: {
     extensions: ['','.js']
   },
-  
+
   entry:[
     './src/index'
   ],
