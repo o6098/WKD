@@ -15,7 +15,7 @@ if(process.env.NODE_ENV !== 'production'){
 }
 
 
-app.use(express.static(__dirname + './dist'));
+app.use(express.static(__dirname + '/dist'));
 
 app.get('/',function response(req,res){
   res.sendFile(path.join(__dirname ,'index.html'));
