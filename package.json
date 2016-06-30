@@ -6,8 +6,7 @@
   "repository": "git@github.com:StephenGrider/ReduxSimpleStarter.git",
   "scripts": {
     "start": "node app.js",
-    "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
-    "test:watch": "npm run test -- --watch",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "webpack -p --config webpack.prod.config.js"
   },
   "author": "",
